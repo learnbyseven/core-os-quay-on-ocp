@@ -8,7 +8,9 @@ Perquisites
 ===========
 
 1. Single VM 4 vCPU 4 GB RAM 
+
 2. OS RHEL7
+
 3. APPLICATION IMAGES 
    - quay.io/coreos/quay:v2.9.5
    - registry.access.redhat.com/rhscl/postgresql-96-rhel7
