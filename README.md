@@ -5,7 +5,7 @@ Single server Arch deployment
 =============================
 
 Perquisites
-===========
+-----------
 
 1. Single VM 4 vCPU 4 GB RAM 
 
@@ -18,14 +18,14 @@ Perquisites
 
 
 Application Architecture
-========================
+------------------------
 
 - Quay
 - Redis
 - Postgress (preferred) for Clair / MariaDB 
 
 Deployment Steps 
-================
+----------------
 
 1. Install Docker
 2. Pull Quay image from docker
