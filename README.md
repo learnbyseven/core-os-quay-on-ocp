@@ -2,6 +2,7 @@
 Understand enterprise container registry quay in 21 Minutes 
 
 Single server Arch deployment
+=============================
 
 Perquisites
 
