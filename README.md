@@ -41,7 +41,14 @@ Deployment Steps
 Hight Availability Quay Deployment 
 ==================================
 
+ADDONS 
+======
 
+Clair 
+-----
+
+Container Image
+quay.io/coreos/clair-jwt:v2.0.0
 
 oc create secret generic coreos-pull-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type='kubernetes.io/dockerconfigjson' -n quay-enterprise
 
