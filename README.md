@@ -38,6 +38,8 @@ Deployment Steps
    
 
 
+Hight Availability Quay Deployment 
+==================================
 
 
 
@@ -88,5 +90,4 @@ oc get services -n quay-enterprise
 
 AKIA2DJSYPDNAZNZV52U///0WAEhz+APy6mXRO+WHRFi3pBSCkW4Ryn7tslRItT
 
-Hight Availability Quay Deployment 
 
