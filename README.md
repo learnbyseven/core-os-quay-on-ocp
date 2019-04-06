@@ -42,7 +42,7 @@ Hight Availability Quay Deployment
 ==================================
 
 ADDONS 
-======
+------
 
 Clair 
 -----
