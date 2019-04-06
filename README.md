@@ -1,4 +1,4 @@
-# core-os-quay-on-ocp
+# core-os-quay
 Understand enterprise container registry quay in 21 Minutes 
 
 Single server Arch deployment
@@ -43,7 +43,7 @@ oc create secret generic coreos-pull-secret --from-file=.dockerconfigjson=/root/
 
 PG : 9.4 
 
-
+# core-os-quay-on-ocp
 
 STEPs:
 Download script 
