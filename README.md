@@ -22,17 +22,23 @@ Application Architecture
 - Redis
 - Postgress (preferred) for Clair / MariaDB 
 
+Deployment Steps 
+================
+
+1. Install Docker
+2. Pull Quay image from docker
+- docker login -u="coreos+rhcp" -p="L6ZXXVHD9XLQ7PR7HBNRW2FAIZQNJYHREISFGCUBIB45C43WCWYU3DZ0FHJH2AY5" quay.io
+- docker pull quay.io/coreos/quay:v2.9.2
+3. Create containers in sequence  
+   - DB 
+   - Redis 
+   - Quay 
+   
 
 
 
-Deploy 
 
 
-### Pull image
-docker login -u="coreos+rhcp" -p="L6ZXXVHD9XLQ7PR7HBNRW2FAIZQNJYHREISFGCUBIB45C43WCWYU3DZ0FHJH2AY5
-/AKIA2DJSYPDNB5FYHCR3/LRp4ML41e9ph3Hm/Kv3cM8sLbIA99n/BWDZttsOX" quay.io
-AKIA2DJSYPDNAZNZV52U///0WAEhz+APy6mXRO+WHRFi3pBSCkW4Ryn7tslRItT
-docker pull quay.io/coreos/quay:v2.9.2
 oc create secret generic coreos-pull-secret --from-file=.dockerconfigjson=/root/.docker/config.json --type='kubernetes.io/dockerconfigjson' -n quay-enterprise
 
 PG : 9.4 
@@ -75,6 +81,10 @@ sudo docker ps | grep postgres
 oc get services -n quay-enterprise
 
 
+
+/AKIA2DJSYPDNB5FYHCR3/LRp4ML41e9ph3Hm/Kv3cM8sLbIA99n/BWDZttsOX
+
+AKIA2DJSYPDNAZNZV52U///0WAEhz+APy6mXRO+WHRFi3pBSCkW4Ryn7tslRItT
 
 Hight Availability Quay Deployment 
 
